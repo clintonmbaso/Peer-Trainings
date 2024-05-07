@@ -61,24 +61,30 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #f9f9f9;
+            background-color: rgba(23,45,23,0.6);
             border: 1px solid #ccc;
             padding: 20px;
             z-index: 3;
-            max-width: 80%;
-            max-height: 80%;
+            width: 80%;
+            height: 80%;
             overflow: auto;
         }
         .popup a {
             display: block;
             padding: 10px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
             border-bottom: 1px solid #ccc;
         }
         .popup a:hover {
             background-color: #ddd;
         }
+  
+  .popup img {
+    height: 20px;
+    width: auto;
+  }
+  
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -125,6 +131,24 @@ header h3 {
     margin: 0; /* Remove default margin */
     font-size: 1.2em; /* Adjust the font size as needed */
 }
+  
+.small {
+  font-size: 14px;
+}
+  
+  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  
+.jsi {
+  align-content: right;
+}
     </style>
 </head>
 <body>
@@ -132,7 +156,9 @@ header h3 {
 <header>
 <a href="index.html"><img src="images/usaid.png" alt="Zam Health Logo"></a>
     <img src="images/JSI.png" alt="Zam Health Logo"> <!-- Add your logo image -->
-    <h3><span style="color: yellow;">Zam Health</span> <span style="color: white;"> - Peer Educators Training</span></h3> <!-- Title with two colors -->
+    <h3>
+      <span style="color: yellow;" class="zam">Zam Health</span><br>
+      <span style="color: white;" class="zam small">Peer Educators Training</span></h3> <!-- Title with two colors -->
 </header>
   
   
@@ -258,11 +284,178 @@ header h3 {
       
         <div class="popup-overlay" id="popupOverlay"></div>
         <div id="popupClinton" class="popup">
-            <a href="#" class="popup-link" data-info="<body>
-    <h5>Next Meeting</h5>
-    <p>Date: [Insert Date]</p>
-    <p>Venue: [Insert Venue]</p>
-    <p>Time: [Insert Time]</p>">Module 1</a>
+            <a href="#" class="popup-link" data-info="
+<p>Welcome to the Module A covering introductions, objectives, expectations, housekeeping, opening remarks, and an overview of Zam Health's initiatives and services. Throughout this module, we will delve into each of these aspects to provide a comprehensive understanding of our organization and its offerings.</p>
+              
+
+  <h3 id='tableofcontents'>Table of Contents</h3>
+  <ul>
+    <li><a href='#introductions'>Introductions</a></li>
+    <li><a href='#objectives''>Objectives</a></li>
+    <li><a href='#expectations'>Expectations</a></li>
+    <li><a href='#housekeeping'>Housekeeping</a></li>
+    <li><a href='#opening-remarks'>Opening Remarks</a></li>
+    <li><a href='#overview'>Overview of Zam Health's Initiatives and Services</a></li>
+  </ul>
+
+  <!-- Content goes here -->
+
+<h3 id='introductions'><a href='#tableofcontents'>Introduction at the Beginning of the Workshop</a></h3>
+
+<h4>1. Trainee Introductions:</h4>
+<p>Trainees began by providing their full names, which served to formalize their presence within the workshop. They also shared their preferred names, offering a more personalized and comfortable form of address for interactions throughout the seminar. Additionally, trainees disclosed the health facility they represented, providing context for their perspectives and experiences in sexual reproductive health.</p>
+
+<h4>2. Facilitator Introductions:</h4>
+<p>Facilitators, on the other hand, introduced themselves by highlighting their areas of expertise and positions within their respective organizations or governmental bodies. This established their credibility and authority in delivering the workshop content. Moreover, facilitators shared their hobbies, offering insights into their personalities and fostering a sense of relatability among participants.</p>
+
+<h4>3. Unique Component: Preferred Part of the Body and Reasoning:</h4>
+<p>A distinctive element of the introductions involved participants sharing their preferred part of the body, accompanied by a rationale for why it held significance to them. This exercise not only added an engaging and personal touch to the introductions but also served as an icebreaker, encouraging participants to reflect on their own bodies and identities in a positive light.</p>
+
+<h4>Comprehensive Report:</h4>
+<p>The introductions at the beginning of the peer education training workshop served multiple purposes, including:</p>
+<ol>
+  <li><strong>Establishing Connection:</strong> By sharing personal details such as preferred names, health facilities, areas of expertise, and hobbies, participants forged connections with one another, facilitating collaboration and mutual support throughout the workshop.</li>
+  <li><strong>Building Rapport:</strong> The inclusion of hobbies in introductions created opportunities for participants to find common interests and bond over shared experiences outside the realm of sexual reproductive health, fostering a supportive and inclusive learning environment.</li>
+  <li><strong>Encouraging Reflection:</strong> The exercise of identifying a preferred part of the body prompted participants to reflect on their own identities, body image, and relationships with sexuality and reproductive health, setting a foundation for deeper exploration and understanding during the workshop sessions.</li>
+  <li><strong>Promoting Engagement:</strong> By incorporating a unique and interactive component into the introductions, participants were more likely to remain engaged and attentive throughout the workshop, laying the groundwork for active participation and knowledge retention.</li>
+</ol>
+<p>In summary, introductions at the beginning of the peer education training workshop served as a critical first step in cultivating a supportive, inclusive, and engaging learning environment focused on sexual reproductive health among adolescents. Through the sharing of personal and professional identities, participants established connections, built rapport, encouraged reflection, and promoted active engagement, setting the stage for a meaningful and impactful learning experience over the course of the workshop.</p>
+              <hr>
+
+              
+              
+  <h3 id='objectives'><a href='#tableofcontents'>Objectives for Peer Education Training Workshop</a></h3>
+<ol>
+  <li><strong>Increase Knowledge:</strong> Provide participants with comprehensive knowledge about sexual reproductive health, including anatomy, contraception, sexually transmitted infections (STIs), and menstrual hygiene management.</li>
+  <li><strong>Enhance Communication Skills:</strong> Equip participants with effective communication skills to facilitate open and non-judgmental discussions about sexual health topics with peers, parents, and community members.</li>
+  <li><strong>Promote Peer Education:</strong> Train participants to become effective peer educators who can disseminate accurate information and support their peers in making informed decisions about their sexual and reproductive health.</li>
+  <li><strong>Address Stigma and Myths:</strong> Challenge misconceptions and stigma surrounding sexual health topics, such as contraception, menstruation, and STIs, through education and dialogue.</li>
+  <li><strong>Empower Adolescents:</strong> Empower adolescents to take ownership of their sexual health by providing them with the knowledge, skills, and resources necessary to make healthy decisions and access appropriate services.</li>
+  <li><strong>Foster Gender Sensitivity:</strong> Promote gender sensitivity and inclusivity in discussions about sexual health, acknowledging the diverse experiences and needs of individuals regardless of gender identity or sexual orientation.</li>
+  <li><strong>Encourage Responsible Behavior:</strong> Encourage participants to adopt responsible and respectful sexual behavior, including practicing safer sex, obtaining consent, and respecting boundaries.</li>
+  <li><strong>Provide Access to Resources:</strong> Connect participants with resources and services related to sexual and reproductive health, such as clinics, hotlines, and educational materials, to support ongoing learning and access to care.</li>
+  <li><strong>Build Support Networks:</strong> Facilitate the formation of support networks among participants, enabling them to share experiences, seek advice, and provide emotional support related to sexual health issues.</li>
+  <li><strong>Promote Advocacy and Action:</strong> Inspire participants to become advocates for sexual and reproductive health rights in their communities, advocating for comprehensive sexuality education, access to contraception, and gender equality.</li>
+</ol>
+              <hr>
+              
+  <h3 id='expectations'><a href='#tableofcontents'>Expectations</a></h3>
+  <ol>
+    <li>Demonstrate a comprehensive understanding of sexual reproductive health topics, including anatomy, contraception, STIs, and menstrual hygiene management.</li>
+    <li>Exhibit enhanced communication skills by effectively engaging in open and non-judgmental discussions about sexual health with peers, parents, and community members.</li>
+    <li>Actively participate in peer education activities, disseminating accurate information and providing support to their peers in making informed decisions about their sexual health.</li>
+    <li>Challenge misconceptions and stigma surrounding sexual health topics through education and dialogue.</li>
+    <li>Take ownership of their sexual health by making informed decisions, accessing appropriate services, and advocating for their rights.</li>
+    <li>Demonstrate sensitivity and inclusivity in discussions about sexual health, respecting the diverse experiences and needs of individuals regardless of gender identity or sexual orientation.</li>
+    <li>Practice responsible and respectful sexual behavior, including safer sex practices, obtaining consent, and respecting boundaries.</li>
+    <li>Utilize resources and services related to sexual and reproductive health to support ongoing learning and access to care.</li>
+    <li>Engage in support networks, seeking advice, sharing experiences, and providing emotional support related to sexual health issues.</li>
+    <li>Act as advocates for sexual and reproductive health rights in their communities, promoting comprehensive sexuality education, access to contraception, and gender equality.</li>
+  </ol>
+
+              <hr>
+              
+  <h3 id='housekeeping'><a href='#tableofcontents'>Housekeeping</a></h3>
+    
+  <ol>
+    <li><strong>Registration:</strong> A registration desk was set up at the entrance to confirm attendance. Participants were required to sign in upon arrival to the workshop.</li>
+    <li><strong>Facilities:</strong> Participants were briefed on the workshop facilities, including the location of restrooms and emergency exits, to ensure their comfort and safety throughout the event.</li>
+    <li><strong>Timing:</strong> The workshop schedule was meticulously followed to ensure that sessions started and ended on time. Breaks were provided for participants to refresh and rest as needed.</li>
+    <li><strong>Materials:</strong> Workshop materials, including handouts, notebooks, and pens, were distributed to participants at the beginning of the workshop to facilitate note-taking and active participation.</li>
+    <li><strong>House Rules:</strong> The following house rules were communicated to participants to maintain a conducive learning environment:
+      <ul>
+        <li>Respect others' opinions and viewpoints.</li>
+        <li>Refrain from using electronic devices during sessions unless necessary for workshop activities.</li>
+        <li>Adhere to time limits for questions and discussions to ensure smooth progress of the agenda.</li>
+      </ul>
+    </li>
+    <li><strong>Duty Rota:</strong>
+              
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Day 1</th>
+          <th>Day 2</th>
+          <th>Day 3</th>
+          <th>Day 4</th>
+          <th>Day 5</th>
+
+        </tr>
+        <tr>
+          <td>Chair</td>
+          <td>Clint</td>
+          <td>Raymond</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+        <tr>
+          <td>Prayer</td>
+          <td>Participant A</td>
+          <td>Beatrice</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+        <tr>
+          <td>Police</td>
+          <td>Participant A</td>
+          <td>Participant B</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+        <tr>
+          <td>Treasurer</td>
+          <td>Prudence</td>
+          <td>Participant B</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+        <tr>
+          <td>Time Keeper</td>
+          <td>Participant A</td>
+          <td>Max</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+        <tr>
+          <td>Energizer</td>
+          <td>Participant A</td>
+          <td>Participant B</td>
+          <td>Participant C</td>
+          <td>Participant D</td>
+          <td>Participant E</td>
+
+        </tr>
+
+        <!-- Add more rows for each day -->
+      </table>
+    </li>
+  </ol>
+              
+              <hr>
+              
+  <h3 id='opening-remarks'><a href='#tableofcontents'>Opening Remarks</a></h3>
+  <p>Content for opening remarks...</p>
+              <hr>
+              
+  <h3 id='overview'><a href='#tableofcontents'>Overview of Zam Health's Initiatives and Services</a></h3>
+  <p>Content for overview...</p>
+              
+              ">
+              
+              <div style="display: flex; justify-content: space-between;">
+    <img src="images/usaid.png">
+    <img class="jsi" src="images/JSI.png" style="align-self: flex-end;">
+</div><br><strong>Module A</strong><br>The module covers introductions, objectives, expectations, housekeeping, opening remarks, and an overview of Zam Health Organization and Services.</a>
             <a href="#" class="popup-link" data-info="
 
 <h1>Module B</h1>
@@ -352,38 +545,36 @@ header h3 {
               
 
     <h3>Rights Related to Sexual and Reproductive Health (SRH)</h3>
-
     <ol>
         <li><strong>Right to Health:</strong> The right to the enjoyment of the highest attainable standard of physical and mental health, including access to SRH services, information, and education without discrimination.</li>
-
         <li><strong>Right to Privacy:</strong> The right to make autonomous decisions about one's own body, including matters related to SRH, and protection of personal information in healthcare settings.</li>
-
         <li><strong>Right to Non-Discrimination:</strong> The right to access SRH services and information free from discrimination based on factors such as gender, age, marital status, sexual orientation, disability, or socioeconomic status.</li>
-
         <li><strong>Right to Bodily Autonomy:</strong> The freedom to make decisions about one's body, including decisions related to contraception, abortion, and pregnancy, without coercion or force.</li>
-
         <li><strong>Right to Information:</strong> Access to accurate, comprehensive, and age-appropriate information about SRH, enabling individuals to make informed choices about their health and well-being.</li>
-
         <li><strong>Right to Consent:</strong> The right to freely and voluntarily consent to or refuse any medical treatment, including procedures related to SRH, without coercion or manipulation.</li>
-
         <li><strong>Right to Education:</strong> Access to comprehensive sexuality education providing accurate information about SRH, relationships, consent, and gender equality.</li>
-
         <li><strong>Right to Maternal Health:</strong> Access to quality maternal healthcare services before, during, and after childbirth, including skilled providers, prenatal care, emergency obstetric care, and postnatal support.</li>
-
         <li><strong>Right to Safe Abortion:</strong> Access to safe and legal abortion services in cases where pregnancy poses a risk to health or life, in cases of rape or incest, or when the pregnancy is not viable.</li>
-
         <li><strong>Right to Reproductive Choice:</strong> The freedom to decide whether, when, and how many children to have, and access to a range of reproductive healthcare services, including contraception, fertility treatment, and abortion.</li>
     </ol>
-
     <p>These rights are recognized and protected by international human rights instruments, including the Universal Declaration of Human Rights, the International Covenant on Economic, Social and Cultural Rights, the Convention on the Elimination of All Forms of Discrimination against Women, and the International Conference on Population and Development Programme of Action. Ensuring the realization of these rights is essential for promoting the health, dignity, and well-being of individuals and communities worldwide.</p>
-
               <hr>
+              ">
+              <div style="display: flex; justify-content: space-between;"><img src="images/usaid.png"><img class="jsi" src="images/JSI.png" style="align-self: flex-end;"></div><br><strong>Module B</strong><br>The module covers key aspects of sexual education: human rights, hygiene, delaying sexual activity, safe sex, contraception, adolescent pregnancy care, and safe abortion.</a>
+          
+          
+            <a href="#" class="popup-link" data-info="
+              <p>Information related to Option 3 for 2024</p>
               
-
+              ">
+              <div style="display: flex; justify-content: space-between;"><img src="images/usaid.png"><img class="jsi" src="images/JSI.png" style="align-self: flex-end;"></div><br><strong>Group Work</strong><br>Group work fosters collaboration, diverse perspectives, problem-solving skills, and enhances communication, leading to enriched learning experiences and collective achievement.</a>
+          
+          
+            <a href="#" class="popup-link" data-info="
+              <p>Information related to Option 3 for 2024</p>
               
-              ">Module 2</a>
-            <a href="#" class="popup-link" data-info="<p>Information related to Option 3 for 2024</p>">Group Work</a>
-            <a href="#" class="popup-link" data-info="<p>Information related to Option 3 for 2024</p>">Day Recap</a>
+              ">
+              <div style="display: flex; justify-content: space-between;"><img src="images/usaid.png"><img class="jsi" src="images/JSI.png" style="align-self: flex-end;"></div><br><strong>Day Recap</strong><br>Reflect on accomplishments, challenges, and lessons learned. Share insights, celebrate progress, and plan next steps for improvement.</a>
 
         </div>
         <!-- Add similar divs for other years -->
