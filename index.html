@@ -1,1 +1,359 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zam - Health Peer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 7px;
+            text-align: center;
+           
+        }
+        .container {
+            display: flex;
+        }
+        nav {
+            width: 20%;
+            background-color: #f4f4f4;
+            height: 100vh;
+            overflow: auto;
+        
+        }
+        nav a {
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        section {
+            width: 80%;
+            padding: 10px;
+            overflow-y: auto; /* Enable vertical scrolling */
+            height: 80vh; /* Set a fixed height */
+}
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            backdrop-filter: blur(5px);
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 3;
+            max-width: 80%;
+            max-height: 80%;
+            overflow: auto;
+        }
+        .popup a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+        .popup a:hover {
+            background-color: #ddd;
+        }
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: 200px; /* Set the desired height */
+    width: auto; /* Maintain aspect ratio */
+}
+.caption {
+    position: absolute;
+    bottom: 5px;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 6.5px;
+    font-size: 12px;
+}
+ 
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 30px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Add margin to separate the logo from the title */
+}
+
+header h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+    </style>
+</head>
+<body>
+
+<header>
+<a href="index.html"><img src="images/usaid.png" alt="Zam Health Logo"></a>
+    <img src="images/JSI.png" alt="Zam Health Logo"> <!-- Add your logo image -->
+    <h3><span style="color: yellow;">Zam Health</span> <span style="color: white;"> - Peer Educators Training</span></h3> <!-- Title with two colors -->
+</header>
+  
+  
+   <div id="FlexContainer2">
+      <div id="wb_Text5">
+         <span style="color:#FFFFFF;font-family:Calibri;font-size:13px;line-height:16px;"><strong>Our Skills Programs</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;line-height:15px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:Share;font-size:13px;line-height:15px;">Come and experience our skill touch in style</span>
+      </div>
+   </div>
+
+</div>
+  
+<div class="container">
+    <nav>
+        <a href="#popupClinton">Day 1</a>
+        <a href="#popup2025">Day 2</a>
+        <a href="#popup2026">Day 3</a>
+        <a href="#popup2027">Day 4</a>
+        <a href="#popup2028">Day 5</a>
+    </nav>
+
+    <section>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="images/1a.jpg" style="width:100%">
+        <div class="caption">Empowerment begins with knowledge.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/2a.jpg" style="width:100%">
+        <div class="caption">Educate, empower, embrace.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/3a.jpg" style="width:100%">
+        <div class="caption">Breaking taboos, building awareness.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/4a.jpg" style="width:100%">
+        <div class="caption">Health is wealth, invest wisely.</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="images/5a.jpg" style="width:100%">
+        <div class="caption">Educate yourself, educate others.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/6a.jpg" style="width:100%">
+        <div class="caption">Knowledge is the best protection.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/7a.jpg" style="width:100%">
+        <div class="caption">Healthy choices, healthier futures.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/8a.jpg" style="width:100%">
+        <div class="caption">Advocating for inclusive healthcare.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/9a.jpg" style="width:100%">
+        <div class="caption">Your body, your rights, your health.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/10a.jpg" style="width:100%">
+        <div class="caption">Let us talk about the real facts.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/11a.jpg" style="width:100%">
+        <div class="caption">Taking charge of your reproductive health.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/12a.jpg" style="width:100%">
+        <div class="caption">Every body deserves respect and care.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/13a.jpg" style="width:100%">
+        <div class="caption">Educate, advocate, elevate.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/14a.jpg" style="width:100%">
+        <div class="caption">Breaking barriers, promoting health.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/15a.jpg" style="width:100%">
+        <div class="caption">Safe choices, bright futures.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/16a.jpg" style="width:100%">
+        <div class="caption">Knowledge is key to empowerment.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/17a.jpg" style="width:100%">
+        <div class="caption">No shame, just facts.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/18a.jpg" style="width:100%">
+        <div class="caption">Promoting sexual health, one conversation at a time.</div>
+    </div>  
+  
+    <div class="mySlides fade">
+        <img src="images/19a.jpg" style="width:100%">
+        <div class="caption">Consent, respect, and health.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/20a.jpg" style="width:100%">
+        <div class="caption">Healthy bodies, healthy lives.</div>
+    </div>  
+  
+      
+  
+    <!-- Add more slides as needed -->
+</div>
+      
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div id="popupClinton" class="popup">
+            <a href="#" class="popup-link" data-info="<body>
+    <h5>Next Meeting</h5>
+    <p>Date: [Insert Date]</p>
+    <p>Venue: [Insert Venue]</p>
+    <p>Time: [Insert Time]</p>">Module 1</a>
+            <a href="#" class="popup-link" data-info="<p>Information related to Option 2 for 2024</p>">Module 2</a>
+            <a href="#" class="popup-link" data-info="<p>Information related to Option 3 for 2024</p>">Group Work</a>
+            <a href="#" class="popup-link" data-info="<p>Information related to Option 3 for 2024</p>">Day Recap</a>
+
+        </div>
+        <!-- Add similar divs for other years -->
+        <div id="contentArea">
+                  <h3>Empowering Youth: The Role of Peer Education in Sexual Reproductive Health</h3>
+    </header>
+    <article>
+        <h4>Introduction:</h4>
+        <p>In the realm of sexual reproductive health, knowledge is power, and who better to impart this knowledge than peers? Peer education, a dynamic approach to health promotion, harnesses the influence and relatability of young people to foster positive behaviors and attitudes towards sexual reproductive health. Let's delve into the captivating world of peer education and its transformative impact on youth empowerment and well-being.</p>
+        
+        <h4>Why Peer Education Matters:</h4>
+        <p>Peer education is not just another method; it's a movement driven by the belief that young people are best positioned to understand and support their peers. Unlike traditional top-down approaches, peer education creates a safe and inclusive space for candid discussions, free from judgment or stigma. It's a platform where young individuals can share experiences, ask questions, and receive accurate information tailored to their needs and realities.</p>
+        
+        <h4>Benefits of Peer Education:</h4>
+        <p>The benefits of peer education are manifold. Through peer-led initiatives, young people gain comprehensive knowledge about sexual reproductive health, including contraception, STI prevention, and consent. Beyond knowledge acquisition, peer education cultivates empathy, resilience, and critical thinking skills, empowering youth to make informed decisions about their bodies and relationships. Moreover, peer educators serve as role models, challenging harmful norms and stereotypes while promoting gender equality and sexual rights.</p>
+        
+        <h4>Challenges and Solutions:</h4>
+        <p>While peer education holds immense promise, it's not without its challenges. Inadequate training, cultural barriers, and institutional support constraints can hinder the effectiveness of peer-led programs. However, these challenges are not insurmountable. By investing in comprehensive training, mentorship, and ongoing support for peer educators, communities can bolster the impact of peer education initiatives. Furthermore, leveraging digital platforms and community partnerships can extend the reach and accessibility of peer-led interventions, ensuring no young person is left behind.</p>
+        
+        <h4>Best Practices for Peer Education:</h4>
+        <p>To maximize the effectiveness of peer education, certain best practices must be embraced. Interactive and participatory approaches, such as role-playing and group discussions, foster engagement and knowledge retention. Culturally sensitive messaging and materials resonate with diverse audiences, respecting their values and beliefs. Additionally, continuous evaluation and feedback mechanisms enable program adaptability and improvement, ensuring relevance and impact over time.</p>
+        
+        <h4>Conclusion:</h4>
+        <p>Peer education is not just about imparting information; it's about empowerment, connection, and collective action. By harnessing the power of peer influence, communities can foster a generation of informed, confident, and resilient young people who are equipped to navigate the complexities of sexual reproductive health. Let's continue to champion peer education as a catalyst for positive change, unlocking the potential of youth and building healthier, more inclusive societies.</p>
+    </article></div>
+    </section>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll('nav a');
+        const popupOverlay = document.getElementById('popupOverlay');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const popupId = link.getAttribute('href').substring(1);
+                const popup = document.getElementById(popupId);
+                popupOverlay.style.display = 'block';
+                popup.style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.popup-link').forEach(item => {
+            item.addEventListener('click', event => {
+                event.preventDefault();
+                const info = event.target.getAttribute('data-info');
+                document.getElementById('contentArea').innerHTML = info;
+                closePopup();
+            });
+        });
+
+        popupOverlay.addEventListener('click', function() {
+            closePopup();
+        });
+
+        function closePopup() {
+            popupOverlay.style.display = 'none';
+            document.querySelectorAll('.popup').forEach(popup => {
+                popup.style.display = 'none';
+            });
+        }
+    });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Your existing code...
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 10000); // Change image every 2 seconds
+    }
+});
+
+</script>
+
+</body>
+</html>
