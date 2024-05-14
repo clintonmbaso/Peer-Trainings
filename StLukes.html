@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. Lukes Dashboard</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Add your CSS styling here */
+    .dashboard {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      font-size: 25px;
+    }
+    canvas {
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>St. Luke's Medical Facility <br> Dashboard</h1>
+    <p>This page offers a comprehensive overview of the activities undertaken by our esteemed medical facility, meticulously aligned with the principles of peer education in creating a supportive and enriching environment. Explore our dashboard to gain valuable insights into the initiatives driving positive community engagement and promoting health education. Welcome to a journey of empowerment and collaboration in fostering a healthier tomorrow.</p>
+    <hr>
+    <h3>Total Activities Progress</h3>
+    <canvas id="tasksChart" width="300" height="300"></canvas>
+      
+      <div class="activity">
+      <h3>Activities</h3>
+      <p>1. Health Education Workshops</p>
+      <canvas id="activity1Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>2. Vaccination Campaigns</p>
+      <canvas id="activity2Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>3. Community Health Screenings</p>
+      <canvas id="activity3Chart" width="200" height="100"></canvas>
+    </div>
+
+    <!-- Add more activities as needed -->
+  </div>
+  
+  <script>
+    // Sample data (you can replace it with real data from your backend)
+    const activity1Data = [2, 98]; // Example data: [completed, remaining]
+    const activity2Data = [65, 35];
+    const activity3Data = [90, 10];
+    // Add more activity data as needed
+
+    // Create activity charts
+    const activity1Chart = new Chart(document.getElementById('activity1Chart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed', 'Remaining'],
+        datasets: [{
+          data: activity1Data,
+          backgroundColor: ['#36a2eb', '#ff6384']
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Activity 1 Progress'
+        }
+      }
+    });
+
+    const activity2Chart = new Chart(document.getElementById('activity2Chart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed', 'Remaining'],
+        datasets: [{
+          data: activity2Data,
+          backgroundColor: ['#36a2eb', '#ff6384']
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Activity 2 Progress'
+        }
+      }
+    });
+
+    const activity3Chart = new Chart(document.getElementById('activity3Chart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed', 'Remaining'],
+        datasets: [{
+          data: activity3Data,
+          backgroundColor: ['#36a2eb', '#ff6384']
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Activity 3 Progress'
+        }
+      }
+    });
+  </script>
+  
+  <script>
+    // Calculate total completed and remaining tasks
+    const totalCompletedTasks = activity1Data[0] + activity2Data[0] + activity3Data[0];
+    const totalRemainingTasks = activity1Data[1] + activity2Data[1] + activity3Data[1];
+
+    // Update tasks chart
+    const tasksChart = new Chart(document.getElementById('tasksChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Completed', 'Remaining'],
+        datasets: [{
+          data: [totalCompletedTasks, totalRemainingTasks],
+          backgroundColor: ['#36a2eb', '#ff6384']
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Tasks Progress'
+        }
+      }
+    });
+  </script>
+</body>
+</html>
