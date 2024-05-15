@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2T721CW7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q2T721CW7G');
+</script>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management</title>
@@ -46,11 +56,15 @@
             cursor: pointer;
             font-size: 20px;
         }
+#taskInput {
+  width: 100%;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Task Management</h1>
+      <p>You can easily create new tasks, assign them to team members, and track their progress in one centralized platform. By utilizing this tool, you can effectively manage the implementation of insights gained from various initiatives or projects.</p>
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Enter task...">
             <input type="date" id="taskDate">

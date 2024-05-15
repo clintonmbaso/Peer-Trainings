@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2T721CW7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q2T721CW7G');
+</script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>St. Lukes Dashboard</title>
@@ -20,6 +30,9 @@
       text-align: center;
       font-size: 25px;
     }
+.para {
+      text-align: center;
+}
     canvas {
       margin: 0 auto;
       display: block;
@@ -29,7 +42,7 @@
 <body>
   <div class="dashboard">
     <h1>St. Luke's Medical Facility <br> Dashboard</h1>
-    <p>This page offers a comprehensive overview of the activities undertaken by our esteemed medical facility, meticulously aligned with the principles of peer education in creating a supportive and enriching environment. Explore our dashboard to gain valuable insights into the initiatives driving positive community engagement and promoting health education. Welcome to a journey of empowerment and collaboration in fostering a healthier tomorrow.</p>
+    <p class="para">Discover a holistic overview of our endeavors, intricately woven with the ethos of peer education to cultivate a nurturing and informed community. Dive into our dashboard to uncover invaluable insights into the initiatives propelling constructive community involvement and advancing health education. Embark on a journey of empowerment and cooperation as we collectively strive towards building a healthier future.</p>
     <hr>
     <h3>Total Activities Progress</h3>
     <canvas id="tasksChart" width="300" height="300"></canvas>
