@@ -16,7 +16,7 @@
     <title>Reporting Hub</title>
     <!-- Include Chart.js library -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<link rel="stylesheet" href="indexing.css">
 <style>
         /* Refine Typography */
         body {
@@ -43,7 +43,7 @@
         /* Enhance Color Scheme */
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
             background-color: rgba(55,55,55,0.7);
             border-radius: 8px;
@@ -111,6 +111,7 @@
 .reportHeader {
   background-color: rgba(255,255,255,0.3);
   border-radius: 20px;
+  margin-top: 50px;
 }
 .par {
   text-align: center;
@@ -119,9 +120,33 @@
   padding: 5px;
   background-color: rgba(0,0,0,0.3);
 }
+
+
+
+
     </style>
 </head>
 <body>
+<header>
+    <h1>Peer Education Monitoring</h1>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+</header>
+  
+  
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Home</a>
+  <a href="PeerEducationTraining.html">Training</a>
+  <a href="allFacilities.html">Dashboard</a>
+  <a href="taskManagement.html">Task Management</a>
+  <a href="progressTracking.html">Progress Tracking</a>
+  <a href="documentRepository.html">Document Repository</a>
+  <a href="discussionForums.html">Discussion Forums</a>
+  <a href="reporting.html">Reporting</a>
+</div>
+
   
     <div class="container">
         <h1 class="reportHeader">Reporting Hub</h1>
@@ -270,7 +295,7 @@
                 <!-- Add more task breakdown as needed -->
             </div>
           <hr>
-          <h3 class="facility">Xola</h3>
+          <h3 class="facility">Xora</h3>
             <div class="report-content">
                 <p>Completion Rate: 75%</p>
                 <p>Tasks Completed: 15</p>
@@ -376,5 +401,8 @@ document.getElementById("completion-rate-value").textContent = completionRate + 
       }
     });
   </script>
+
+<script src="indexing.js"></script>
+
 </body>
 </html>
