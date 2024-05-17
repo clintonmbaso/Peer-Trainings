@@ -47,107 +47,117 @@ a {
     <h3>Total Activities Progress</h3>
     <canvas id="tasksChart" width="300" height="300"></canvas>
       
-      <div class="activity">
       <h3>Activities</h3>
-      <p>1. <a href="StLukes.html">St. Lukes Medical Facility</a></p>
+    <div class="activity">
+      <p>1. <a href="AnthuOmwe.html">Anthu Omwe</a></p>
       <canvas id="activity1Chart" width="200" height="100"></canvas>
     </div>
 
     <div class="activity">
-      <p>2. <a href="xora.html">Xora Medical Facility</a></p>
+      <p>2. <a href="Antaliah.html">Antaliah</a></p>
       <canvas id="activity2Chart" width="200" height="100"></canvas>
     </div>
 
     <div class="activity">
-      <p>3. <a href="Makululu.html">Makululu Medical Facility</a></p>
+      <p>3. <a href="Bethel10Miles.html">Bethel 10 Miles</a></p>
       <canvas id="activity3Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>4. <a href="BethelFringila.html">Bethel Fringila</a></p>
+      <canvas id="activity4Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>5. <a href="HealthLiving.html">Health Living</a></p>
+      <canvas id="activity5Chart" width="200" height="100"></canvas>
+    </div>
+    
+    <div class="activity">
+      <p>6. <a href="HopeinChrist.html">Hope in Christ</a></p>
+      <canvas id="activity6Chart" width="200" height="100"></canvas>
+    </div>
+    
+    <div class="activity">
+      <p>7. <a href="Mukuni.html">Mukuni</a></p>
+      <canvas id="activity7Chart" width="200" height="100"></canvas>
+    </div>
+    
+    <div class="activity">
+      <p>8. <a href="StLukes.html">St. Lukes</a></p>
+      <canvas id="activity8Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>9. <a href="valleyview.html">Valley View</a></p>
+      <canvas id="activity9Chart" width="200" height="100"></canvas>
+    </div>
+
+    <div class="activity">
+      <p>10. <a href="xola.html">Xola</a></p>
+      <canvas id="activity10Chart" width="200" height="100"></canvas>
     </div>
 
     <!-- Add more activities as needed -->
   </div>
   
-  <script>
-    // Sample data (you can replace it with real data from your backend)
-    const activity1Data = [72, 28]; // Example data: [completed, remaining]
-    const activity2Data = [65, 35];
-    const activity3Data = [90, 10];
+<script>
+  // Sample data for each activity
+  const activityData = [
+    [72, 28], // Activity 1 data: [completed, remaining]
+    [65, 35], // Activity 2 data: [completed, remaining]
+    [90, 10],  // Activity 3 data: [completed, remaining]
+    [2, 98], // Activity 4 data: [completed, remaining]
+    [63, 37], // Activity 5 data: [completed, remaining]
+    [20, 80], // Activity 6 data: [completed, remaining]
+    [40, 60], // Activity 6 data: [completed, remaining]
+    [32, 68], // Activity 7 data: [completed, remaining]
+    [5, 95], // Activity 8 data: [completed, remaining]
+    [90, 10]  // Activity 9 data: [completed, remaining]
     // Add more activity data as needed
+  ];
 
-    // Create activity charts
-    const activity1Chart = new Chart(document.getElementById('activity1Chart'), {
+  // Create activity charts dynamically
+  for (let i = 0; i < activityData.length; i++) {
+    const activityChart = new Chart(document.getElementById(`activity${i + 1}Chart`), {
       type: 'doughnut',
       data: {
         labels: ['Completed', 'Remaining'],
         datasets: [{
-          data: activity1Data,
+          data: activityData[i],
           backgroundColor: ['#36a2eb', '#ff6384']
         }]
       },
       options: {
         title: {
           display: true,
-          text: 'Activity 1 Progress'
+          text: `Activity ${i + 1} Progress`
         }
       }
     });
+  }
 
-    const activity2Chart = new Chart(document.getElementById('activity2Chart'), {
-      type: 'doughnut',
-      data: {
-        labels: ['Completed', 'Remaining'],
-        datasets: [{
-          data: activity2Data,
-          backgroundColor: ['#36a2eb', '#ff6384']
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Activity 2 Progress'
-        }
-      }
-    });
+  // Calculate total completed and remaining tasks
+  const totalCompletedTasks = activityData.reduce((acc, curr) => acc + curr[0], 0);
+  const totalRemainingTasks = activityData.reduce((acc, curr) => acc + curr[1], 0);
 
-    const activity3Chart = new Chart(document.getElementById('activity3Chart'), {
-      type: 'doughnut',
-      data: {
-        labels: ['Completed', 'Remaining'],
-        datasets: [{
-          data: activity3Data,
-          backgroundColor: ['#36a2eb', '#ff6384']
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Activity 3 Progress'
-        }
+  // Update tasks chart
+  const tasksChart = new Chart(document.getElementById('tasksChart'), {
+    type: 'pie',
+    data: {
+      labels: ['Completed', 'Remaining'],
+      datasets: [{
+        data: [totalCompletedTasks, totalRemainingTasks],
+        backgroundColor: ['#36a2eb', '#ff6384']
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Tasks Progress'
       }
-    });
-  </script>
-  
-  <script>
-    // Calculate total completed and remaining tasks
-    const totalCompletedTasks = activity1Data[0] + activity2Data[0] + activity3Data[0];
-    const totalRemainingTasks = activity1Data[1] + activity2Data[1] + activity3Data[1];
-
-    // Update tasks chart
-    const tasksChart = new Chart(document.getElementById('tasksChart'), {
-      type: 'pie',
-      data: {
-        labels: ['Completed', 'Remaining'],
-        datasets: [{
-          data: [totalCompletedTasks, totalRemainingTasks],
-          backgroundColor: ['#36a2eb', '#ff6384']
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Tasks Progress'
-        }
-      }
-    });
-  </script>
+    }
+  });
+</script>
 </body>
 </html>
